@@ -18,13 +18,13 @@ const Title = (props:any) => {
   return(
         <h1>Working!</h1>
 
-    );
+  );
 };
 
 const NavLink = (props:JSX.IntrinsicAttributes) => {
   return(
         <a className="mdl-navigation__link" href={props.href}>{props.text}</a>
-    );
+  );
 };
 
 const NavBar = (props:JSX.IntrinsicAttributes) => {
@@ -38,7 +38,7 @@ const NavBar = (props:JSX.IntrinsicAttributes) => {
                     props.links.map((name:string, index:number) => {
                       return(
                             <NavLink text={name}></NavLink>
-                        );
+                      );
                     })
                 }
                 </nav>
@@ -49,7 +49,7 @@ const NavBar = (props:JSX.IntrinsicAttributes) => {
                 </div>
             </main>
         </div>
-    );
+  );
 };
 
 const Grid = (props:JSX.IntrinsicAttributes) => {
@@ -57,7 +57,7 @@ const Grid = (props:JSX.IntrinsicAttributes) => {
         <div className="mdl-grid">
             {props.inside}
         </div>
-    );
+  );
 };
 
 const Cell = (props:JSX.IntrinsicAttributes) => {
@@ -65,7 +65,7 @@ const Cell = (props:JSX.IntrinsicAttributes) => {
   const cellClass = `mdl-cell--${props.size}-col`;
   return(
         <div className={cellClass}>{props.inside}</div>
-    );
+  );
 };
 
 const Button = (props:JSX.IntrinsicAttributes) => {
@@ -73,5 +73,5 @@ const Button = (props:JSX.IntrinsicAttributes) => {
         <a href={props.href}><button className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
             {props.text}
         </button></a>
-    );
+  );
 };

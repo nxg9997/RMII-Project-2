@@ -8,6 +8,9 @@
     "rules": {
         "no-console": {
             "severity": "warning"
+        },
+        "no-var-requires": {
+            "severity": "warning"
         }
     },
     "rulesDirectory": []

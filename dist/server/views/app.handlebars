@@ -19,7 +19,49 @@
 </head>
 <body>
     <!--section id="title"></section-->
-    <section id="nav"></section>
+    <!--section id="nav"></section-->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">G-Link</span>
+            <nav class="mdl-navigation">
+                {{#if navlinks}}
+                    {{#each navlinks}}
+                        <a class="mdl-navigation__link" href={{this.href}}>{{this.text}}</a>
+                    {{/each}}
+                {{/if}}
+                <!--a class="mdl-navigation__link" href="">A</a>
+                <a class="mdl-navigation__link" href="">B</a>
+                <a class="mdl-navigation__link" href="">C</a>
+                <a class="mdl-navigation__link" href="">D</a-->
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <div class="mdl-grid">
+                    <div class="mdl-cell--12-col mdl-grid">
+                        <div class="mdl-layout-spacer"></div>
+                        <h1>G-Link</h1>
+                        <div class="mdl-layout-spacer"></div>
+                    </div>
+                    <div class="mdl-cell--12-col mdl-grid">
+                        <div class="mdl-layout-spacer"></div>
+                        <h3 className="text-center">The place to link up with others to game with!</h3>
+                        <div class="mdl-layout-spacer"></div>
+                    </div>
+                    <div class="mdl-cell--12-col mdl-grid">
+                        <div class="mdl-layout-spacer"></div>
+                        <section id="signup"></section>
+                        <div class="mdl-layout-spacer"></div>
+                    </div>
+                    <div class="mdl-cell--12-col mdl-grid">
+                        <div class="mdl-layout-spacer"></div>
+                        <a href="/login"><p>Login In</p></a>
+                        <div class="mdl-layout-spacer"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 <script src="/assets/bundle.js"></script>
 </html>
